@@ -59,10 +59,6 @@ Debug.debug <-  true  //打开调试
 
 - For循环
 
-- __开头内部保留变量报错
-
-- 变量声明时赋值
-
 - switch语法
 
 - break
