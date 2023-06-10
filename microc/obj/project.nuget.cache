@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "obdwsl7WU30oi58KM5UP3C5xD/xB+ETAtJKsU94hzd0sq+M7dWHKok8FaAjRBgNCknnfI8b6xfVCStVAEx0u6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\microc.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MAIBENBEN\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\MAIBENBEN\\.nuget\\packages\\fslexyacc\\10.2.0\\fslexyacc.10.2.0.nupkg.sha512",
+    "C:\\Users\\MAIBENBEN\\.nuget\\packages\\fslexyacc.runtime\\10.2.0\\fslexyacc.runtime.10.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
