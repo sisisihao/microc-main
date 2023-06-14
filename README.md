@@ -182,6 +182,41 @@ void main(int n){
 
 ![1686580319823](image/README/1686580319823.png)
 
+## **break**
+
+### 测试代码
+
+```
+void main (int n){
+/*
+    if( n > 0)
+        print n;
+
+  */  
+  
+    int a ;
+    a = 1;
+    while(a  < n){
+        a = a+1;
+        if(a==4) break;
+        print a;
+    }
+ 
+}
+# 执行命令
+# .\bin\Debug\net5.0\microc.exe -g .\myexample\break.c 5;
+# .\bin\Debug\net5.0\machine.exe  .\break.out 7
+```
+
+### 编译执行
+
+![1686755654323](image/README/1686755654323.png)
+
+
+### 指令
+
+![1686755677926](image/README/1686755677926.png)
+
 # 总结
 
 ## 绩效评价
