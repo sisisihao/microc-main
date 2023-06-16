@@ -149,7 +149,7 @@ dotnet run -p microcc.fsproj ex11.c    # 执行编译器
 
 ```
 
-#### C.2 dotnet fsi 中运行 backwards编译器  
+#### C.2 dotnet fsi 中运行 backwards编译器
 
 ```sh
 dotnet fsi -r ./bin/Debug/net5.0/FsLexYacc.Runtime.dll Absyn.fs CPar.fs CLex.fs Parse.fs Machine.fs Contcomp.fs ParseAndContcomp.fs   
@@ -263,9 +263,9 @@ dotnet  build -t:ccrunx86 microc.fsproj
 #### 数据在栈上的保存方式
 
 - 如数组 a[2] 的元素按次序排在栈上，末尾保存数组变量a，内容是首元素 e0的地址
-- e0, e1, a  
+- e0, e1, a
 
-访问数组，先通过`BP`得到`a`的位置，然后通过`a` 得到首地址 e0，最后计算数组下标偏移地址，访问对应数组元素
+访问数组，先通过 `BP`得到 `a`的位置，然后通过 `a` 得到首地址 e0，最后计算数组下标偏移地址，访问对应数组元素
 
 - 全局变量在栈上依次保存，x86 汇编中，glovar 是全局变量的起始地址
 

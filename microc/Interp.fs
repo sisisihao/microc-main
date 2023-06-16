@@ -266,6 +266,9 @@ and stmtordec stmtordec locEnv gloEnv store =
 
 and eval e locEnv gloEnv store : int * store =
     match e with
+    //acc 的存储位置 loc 和更新后的存储空间 store1。
+//使用 getSto 函数获取 loc 位置上存储的变量值 tmp。
+//+ 1， setSto 存储到 loc 位置上。+ 1 和更新后的存储空间 store1。
     | PreInc acc     -> let (loc, store1) = access acc locEnv gloEnv store
                         let tmp = getSto store1 loc
                         (tmp + 1, setSto store1 loc (tmp + 1))

@@ -129,7 +129,9 @@ Paramdecs1:
 Block:
     LBRACE StmtOrDecSeq RBRACE          { Block $2 }
 ;
-
+// 在规则 StmtOrDecSeq 中，Stmt 子规则调用了 StmtM 和 StmtU 两个子规则，而在 StmtU 子规则中，就是针对自增和自减这种不同于简单表达式的语法结构特殊处理的，
+// 包括了 if 和 while 语句。特别地，StmtM 只处理简单的赋值和基本的控制结构，不包含自增和自减的特殊处理。所以，在 ExprNotAccess 子规则中，
+// 涉及到自增自减的情况必须放在 StmtU 子规则中处理
 StmtOrDecSeq:
     /* empty */                         { [] }
   | Stmt StmtOrDecSeq                   { Stmt $1 :: $2 }
@@ -140,7 +142,7 @@ Stmt:
     StmtM                               { $1 }
   | StmtU                               { $1 }
 ;
-
+// Expr SEMI Expr SEMI Expr 指初始化表达式、循环条件表达式和更新表达式。StmtM 则是 for 循环体内执行的语句，产生 For 节点作为抽象语法树中的一个子节点。
 StmtM:  /* No unbalanced if-else */
     Expr SEMI                           { Expr($1)             }
   | RETURN SEMI                         { Return None          }

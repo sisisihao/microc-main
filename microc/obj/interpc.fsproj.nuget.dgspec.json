@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\interpc.fsproj": {}
+    "C:\\Users\\jinx\\Desktop\\编译原理\\microc-main\\microc\\interpc.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\interpc.fsproj": {
+    "C:\\Users\\jinx\\Desktop\\编译原理\\microc-main\\microc\\interpc.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\interpc.fsproj",
+        "projectUniqueName": "C:\\Users\\jinx\\Desktop\\编译原理\\microc-main\\microc\\interpc.fsproj",
         "projectName": "interpc",
-        "projectPath": "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\interpc.fsproj",
-        "packagesPath": "C:\\Users\\MAIBENBEN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAIBENBEN\\Desktop\\microC\\microc\\obj\\",
+        "projectPath": "C:\\Users\\jinx\\Desktop\\编译原理\\microc-main\\microc\\interpc.fsproj",
+        "packagesPath": "C:\\Users\\jinx\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jinx\\Desktop\\编译原理\\microc-main\\microc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MAIBENBEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jinx\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\6.0.410\\FSharp\\library-packs": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +37,7 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[6.0.7, )",
               "generatePathProperty": true
             },
             "FsLexYacc": {
@@ -53,16 +52,35 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

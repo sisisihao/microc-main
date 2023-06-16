@@ -231,8 +231,9 @@ and cStmtOrDec stmtOrDec (varEnv: VarEnv) (funEnv: FunEnv) (endStack: EndStack):
 
 and cExpr (e: expr) (varEnv: VarEnv) (funEnv: FunEnv) : instr list =
     match e with
-    | PreInc acc     -> cAccess acc varEnv funEnv @ [DUP] @ [LDI] @ [CSTI 1] @ [ADD] @ [STI]
-    | PreDec acc     -> cAccess acc varEnv funEnv @ [DUP] @ [LDI] @ [CSTI 1] @ [SUB] @ [STI] 
+    | PreInc acc     -> cAccess acc varEnv funEnv @ [DUP] @ [LDI] @ [CSTI 1] @ [ADD] @ [STI]//编译器
+    //将 "acc" 转换为 aload 指令序列，变量压入栈。在栈顶取值，复制一份栈顶，将常量 1 压入栈，将栈顶的两个值相加并将结果存回内存，即实现了自增操作。
+    | PreDec acc     -> cAccess acc varEnv funEnv @ [DUP] @ [LDI] @ [CSTI 1] @ [SUB] @ [STI] //-1
     | Access acc -> cAccess acc varEnv funEnv @ [ LDI ]
     | Assign (acc, e) ->
         cAccess acc varEnv funEnv

@@ -5,18 +5,15 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\MAIBENBEN\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\jinx\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.3</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\MAIBENBEN\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\jinx\.nuget\packages\" />
   </ItemGroup>
-  <PropertyGroup>
-    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\MAIBENBEN\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
-    <PkgFsLexYacc Condition=" '$(PkgFsLexYacc)' == '' ">C:\Users\MAIBENBEN\.nuget\packages\fslexyacc\10.2.0</PkgFsLexYacc>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\jinx\.nuget\packages\fsharp.core\6.0.7</PkgFSharp_Core>
+    <PkgFsLexYacc Condition=" '$(PkgFsLexYacc)' == '' ">C:\Users\jinx\.nuget\packages\fslexyacc\10.2.0</PkgFsLexYacc>
   </PropertyGroup>
 </Project>
